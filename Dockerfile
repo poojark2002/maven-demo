@@ -3,7 +3,7 @@ FROM tomcat:10.1-jdk17-temurin
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY target/maven-demo.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/maven-demo-1.0.jar /usr/local/tomcat/webapps/ROOT.jar
 
 EXPOSE 8080
 
